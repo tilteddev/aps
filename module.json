@@ -10,6 +10,6 @@
         "settingsFile":"config.json",
         "settingsMigrator":"settings.js"
     },
-    "servers": ["https://raw.githubusercontent.com/tilteddev/aps/master/"],
+    "servers": ["https://raw.githubusercontent.com/tilteddev/aps/main/"],
     "supportUrl": ""
 }
