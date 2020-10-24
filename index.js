@@ -80,7 +80,7 @@ module.exports = function AutoPrime(mod) {
 
 		function nostrum(disable) {
 			clearTimeout(timeout);
-			if (!disable && alive && !mounted && !inContract && !inBG && loaded) timeout = setTimeout(useNostrum.bind(this), nextUse - Date.now())
+			if (!disable && alive && !mounted && !inContract && !inBG && loaded) timeout = setTimeout(useNostrum, nextUse - Date.now())
 		}
 		
 		function useNostrum() {
@@ -90,7 +90,7 @@ module.exports = function AutoPrime(mod) {
 					gameId: mod.game.me.gameId,
 					id: ITEM_NOSTRUM
 				})
-			}
+			} else timeout = setTimeout(useNostrum, cooldown - time)
 		}
 		
 		function resetCooldown(event) {
