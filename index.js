@@ -80,7 +80,7 @@ module.exports = function AutoPrime(mod) {
 
 		function nostrum(disable) {
 			clearTimeout(timeout);
-			if (!disable && alive && !mounted && !inContract && !inBG && loaded) timeout = setTimeout(useNostrum, nextUse - Date.now())
+			if (!disable && alive && !mounted && !inContract && !inBG && loaded) timeout = setTimeout(useNostrum), nextUse - Date.now())
 		}
 		
 		function useNostrum() {
