@@ -1,0 +1,15 @@
+{
+    "name": "auto-prime",
+    "author": "Xcos",
+    "description": "Non-Elite Lifer",
+    "version": "1.0",
+    "options": {
+        "niceName": "Auto Prime Solution",
+        "reloadable":true,
+        "settingsVersion":1,
+        "settingsFile":"config.json",
+        "settingsMigrator":"settings.js"
+    },
+    "servers": ["https://raw.githubusercontent.com/tilteddev/aps/master/"],
+    "supportUrl": ""
+}
