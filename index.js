@@ -38,6 +38,7 @@ function NetworkMod(mod) {
 	mod.hook('S_ABNORMALITY_END', 1 ,event => {
 		if ( mod.game.me.is(event.target)) {
 			delete playerAbnorms[event.id];
+			useNostrum();
 		}
 	});
 	
